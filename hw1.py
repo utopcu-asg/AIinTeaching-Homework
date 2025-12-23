@@ -599,7 +599,7 @@ def render_problem_1():
             x0=x0,
         )
         fig = render_closed_loop_plot(time, y)
-        st.plotly_chart(fig, use_container_width=True, theme=None, config=PLOTLY_CONFIG)
+        st.plotly_chart(fig, width='stretch', theme=None, config=PLOTLY_CONFIG)
 
 
 def render_problem_2() -> None:
@@ -702,7 +702,7 @@ def render_problem_2() -> None:
             x0=0.0,
         )
         fig = render_closed_loop_plot(time, y, height=440)
-        st.plotly_chart(fig, use_container_width=True, theme=None, config=PLOTLY_CONFIG)
+        st.plotly_chart(fig, width='stretch', theme=None, config=PLOTLY_CONFIG)
 
 
 def render_problem_3() -> None:
@@ -826,7 +826,7 @@ def render_problem_3() -> None:
             kp_override=kp,
         )
         fig = render_closed_loop_plot(time, y)
-        st.plotly_chart(fig, use_container_width=True, theme=None, config=PLOTLY_CONFIG)
+        st.plotly_chart(fig, width='stretch', theme=None, config=PLOTLY_CONFIG)
         st.markdown(f"Selected proportional gain: **kₚ = {kp:.2f}**")
 
 
@@ -870,7 +870,7 @@ def render_problem_4() -> None:
             omega=omega,
         )
         fig = render_state_input_plot(time, x_signal, u_signal)
-        st.plotly_chart(fig, use_container_width=True, theme=None, config=PLOTLY_CONFIG)
+        st.plotly_chart(fig, width='stretch', theme=None, config=PLOTLY_CONFIG)
 
 
 def run_hw1() -> None:

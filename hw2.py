@@ -398,7 +398,7 @@ def render_problem_4():
     json_b = json.dumps(data_b)
 
     # 2. Define Body Content (using f-string for data injection)
-    body = f"""
+    body = rf"""
     <body>
       <style>
         .plot-container {{
@@ -488,7 +488,7 @@ def render_problem_5():
     traces_json = json.dumps(traces_data)
 
     # 2. Define Body Content
-    body = f"""
+    body = rf"""
     <body>
       <style>
         #vectorDisplay {{
@@ -594,8 +594,7 @@ def render_problem_5():
 
 def render_problem_6():
     # 1. Define Body Content
-    # We use double braces {{ }} for JS/CSS because this is an f-string.
-    body = f"""
+    body = rf"""
     <body>
       <style>
         #vectorDisplay6 {{
@@ -625,8 +624,8 @@ def render_problem_6():
         </div>
 
         <div class="exercise">
-          <p><strong>a)</strong> Is $\displaystyle\lim_{{t \\to \infty}} e^{{At}}$ finite? Is $\displaystyle\lim_{{t \\to \infty}} \det(e^{{At}})$ finite?</p>
-          <p><strong>b)</strong> Suppose that $S = Q$. Show that $\displaystyle\lim_{{t \\to \infty}} e_2^\\top e^{{At}} e_2 = 0$, where $e_2 = \\begin{{bmatrix}} 0 \\\\ 1 \\end{{bmatrix}}$.</p>
+          <p><strong>a)</strong> Is $\displaystyle\lim_{{t \to \infty}} e^{{At}}$ finite? Is $\displaystyle\lim_{{t \to \infty}} \det(e^{{At}})$ finite?</p>
+          <p><strong>b)</strong> Suppose that $S = Q$. Show that $\displaystyle\lim_{{t \to \infty}} e_2^\top e^{{At}} e_2 = 0$, where $e_2 = \begin{{bmatrix}} 0 \\ 1 \end{{bmatrix}}$.</p>
         </div>
       </div>
 
